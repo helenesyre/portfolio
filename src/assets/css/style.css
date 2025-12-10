@@ -1,0 +1,52 @@
+@import './variables.css';
+@import './navbar.css';
+@import './footer.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-regular);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 36px;
+  max-width: 1728px;
+  justify-self: center;
+  width: 100%;
+}
+
+/*========== Tablet ==========*/
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-48);
+  }
+}
+
+/*========== Desktop ==========*/
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 108px;
+  }
+}
