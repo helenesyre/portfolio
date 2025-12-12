@@ -3,7 +3,7 @@
  * https://dev.to/moseeh_52/building-modern-spas-with-vanilla-javascript-a-beginners-guide-9a3
  */
 import { home } from './pages/home.js'
-import { projects } from './pages/Projects.js'
+import { projects } from './pages/projects.js'
 import { about } from './pages/about.js'
 import { contact } from './pages/contact.js'
 

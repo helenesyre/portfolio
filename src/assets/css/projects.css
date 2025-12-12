@@ -15,7 +15,6 @@
 
 .project__item:hover .project__image {
   transform: scale(1.07);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   opacity: 0.95;
 }
 
@@ -45,14 +44,12 @@
 }
 
 .project__title {
-  font-weight: var(--font-weight-medium);
   font-size: 32px;
 }
 
 .project__subtitle {
   margin-bottom: var(--spacing-8);
   color: var(--color-light-blue);
-  font-weight: var(--font-weight-medium);
   font-size: 20px;
 }
 
