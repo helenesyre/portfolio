@@ -18,6 +18,9 @@ footer {
 
 .footer-logo svg{
   color: var(--color-black);
+  width: 80px;
+  height: auto;
+  transition: width var(--transition-medium) ease-in-out;
 }
 
 .footer-icons {
@@ -29,11 +32,30 @@ footer {
 }
 
 .footer-icons a {
-  font-size: 24px;
+  font-size: 20px;
   color: var(--color-black);
-  transition: color var(--transition-fast);
+  transition: color var(--transition-fast), font-size var(--transition-medium) ease-in-out;
 }
 .footer-icons a:hover {
   color: var(--color-white);
 }
 
+/*========== Tablet ==========*/
+
+@media (min-width: 768px) {
+  .footer-logo svg{
+    width: 90px;
+  }
+
+  .footer-icons a {
+    font-size: 24px;
+  }
+}
+
+/*========== Desktop ==========*/
+
+@media (min-width: 1200px) {
+  .footer-logo svg{
+    width: 100px;
+  }
+}

@@ -7,6 +7,8 @@ import { projects } from './pages/projects.js'
 import { about } from './pages/about.js'
 import { contact } from './pages/contact.js'
 
+import { footer } from './assets/js/components/footer.js'
+
 const routes = {
   '#/': home,
   '#/projects': projects,
@@ -24,3 +26,6 @@ function handleRoute() {
 // Listen for navigation events
 window.addEventListener('hashchange', handleRoute);
 window.addEventListener('load', handleRoute);
+
+// Render footer
+document.getElementById('footer').innerHTML = footer();
