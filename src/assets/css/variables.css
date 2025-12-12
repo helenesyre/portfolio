@@ -33,8 +33,8 @@
   --font-weight-bold: 700;
 
   /*========== Font Sizes ==========*/
-  --font-size-h1: 32px;
-  --font-size-h2: 26px;
+  --font-size-h1: 36px;
+  --font-size-h2: 28px;
   --font-size-h3: 22px;
   --font-size-h4: 18px;
   --font-size-h5: 16px;
@@ -42,7 +42,7 @@
 
   --font-size-paragraph: 16px;
   --font-size-badge: 24px;
-  --font-size-button: 20px;
+  --font-size-button: 16px;
   --input-font-size: 16px;
 
   /*========== Spacing ==========*/
@@ -72,4 +72,31 @@
   --overlay-shadow: -2px 0 8px rgb(0 0 0 / 10%);
 
   /*========== Gradients ==========*/
+
+}
+
+/*========== Tablet ==========*/
+
+@media (min-width: 768px) {
+  :root {
+    --font-size-h1: 48px;
+    --font-size-h2: 36px;
+    --font-size-h3: 28px;
+    --font-size-h4: 22px;
+    --font-size-h5: 18px;
+    --font-size-h6: 16px;
+  }
+}
+
+/*========== Desktop ==========*/
+
+@media (min-width: 1200px) {
+  :root {
+    --font-size-h1: 60px;
+    --font-size-h2: 44px;
+    --font-size-h3: 32px;
+    --font-size-h4: 24px;
+    --font-size-h5: 20px;
+    --font-size-h6: 18px;
+  }
 }

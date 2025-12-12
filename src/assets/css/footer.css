@@ -2,6 +2,7 @@ footer {
   background-color: var(--color-light-blue);
   width: 100%;
   padding: var(--spacing-32) 0;
+  margin-top: var(--spacing-80);
 }
 
 .footer-content {
