@@ -163,6 +163,10 @@
   border: 1px solid var(--color-light-blue);
 }
 
+/**
+ * Source from 13.desember:
+ * https://stackoverflow.com/questions/14218307/select-arrow-style-change
+ */
 .contact__form select {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDcuMS4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZmlsbD0iI2YwZjBmMCIgZD0iTTI5Ny40IDQ3MC42QzMwOS45IDQ4My4xIDMzMC4yIDQ4My4xIDM0Mi43IDQ3MC42TDUzNC43IDI3OC42QzU0Ny4yIDI2Ni4xIDU0Ny4yIDI0NS44IDUzNC43IDIzMy4zQzUyMi4yIDIyMC44IDUwMS45IDIyMC44IDQ4OS40IDIzMy4zTDMyMCA0MDIuN0wxNTAuNiAyMzMuNEMxMzguMSAyMjAuOSAxMTcuOCAyMjAuOSAxMDUuMyAyMzMuNEM5Mi44IDI0NS45IDkyLjggMjY2LjIgMTA1LjMgMjc4LjdMMjk3LjMgNDcwLjd6Ii8+PC9zdmc+');
   background-repeat: no-repeat;
