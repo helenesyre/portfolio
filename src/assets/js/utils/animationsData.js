@@ -1,3 +1,7 @@
+/**
+ * Source from 14.december:
+ * https://lottiefiles.com/blog/working-with-lottie-animations/how-to-add-lottie-animation-in-web-page-html
+ */
 export const animationsData = [
   {
     id: 'graphicDesign',
