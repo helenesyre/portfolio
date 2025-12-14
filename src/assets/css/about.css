@@ -142,17 +142,9 @@
   max-height: 100%;
 }
 
-.lottie__container.full-height {
-  width: 100%;
-  position: relative;
-}
 .lottie__container.full-height dotlottie-wc {
   transform: scale(1.5);
   display: block;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%) scale(1.5);
 }
 
 .bookbuild__logo,
