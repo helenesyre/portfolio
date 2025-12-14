@@ -17,6 +17,7 @@
   --color-light-gray: #757575;
 
   /*========== Color Percentages ==========*/
+  --color-white-30: rgb(240 240 240 / 0.3);
   --color-white-60: rgb(240 240 240 / 0.6);
 
   /*========== Feedback Colors ==========*/

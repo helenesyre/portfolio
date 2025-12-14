@@ -1,9 +1,14 @@
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-56);
+}
+
 .about__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: var(--spacing-56);
 }
 
 .about__section h1 {
@@ -21,8 +26,9 @@
  * https://www.w3schools.com/css/css3_masking.asp
  */
 .image__mask {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   object-fit: cover;
   -webkit-mask-image: url(/vector.png);
   mask-image: url(/vector.png);
@@ -41,15 +47,23 @@
   gap: var(--spacing-48);
 }
 
+.details__section hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--color-white-60);
+}
+
 .work__experience,
-.education {
+.education,
+.services {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-24);
 }
 
 .work__list,
-.education__list {
+.education__list,
+.services__list {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -65,6 +79,14 @@
   border-radius: var(--border-radius);
 }
 
+.services__item {
+  display: flex;
+  align-items: start;
+  gap: var(--spacing-24);
+  padding: var(--spacing-24);
+  border-radius: var(--border-radius);
+}
+
 .work__item {
   background: var(--gradient-blue-background);
   background-blend-mode: soft-light, normal;
@@ -75,6 +97,11 @@
   background: var(--gradient-yellow-background);
   background-blend-mode: soft-light, normal;
   border: 1px solid var(--color-yellow);
+}
+
+.services__item {
+  background-color: var(--color-black);
+  border: 1px solid var(--color-white-30);
 }
 
 .work__logo,
@@ -97,16 +124,60 @@
   border: 1px solid var(--color-yellow);
 }
 
-/* CHANGE LATER WHEN DATA IS IMPLEMENTED */
-.work__logo svg,
-.education__logo svg {
+.lottie__container {
+  max-width: 60px;
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-light-blue);
+  background: #131313;
+  overflow: hidden;
+}
+
+.lottie__container dotlottie-wc {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lottie__container.full-height {
+  width: 100%;
+  position: relative;
+}
+.lottie__container.full-height dotlottie-wc {
+  transform: scale(1.5);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(1.5);
+}
+
+.bookbuild__logo,
+.appex__logo,
+.larssenamaral__logo,
+.usn__logo {
   width: 35px;
   height: auto;
   fill: var(--color-white);
 }
 
+.noroff__logo {
+  width: auto;
+  height: 35px;
+  fill: var(--color-white);
+}
+
+.appex__logo {
+  padding-right: 3px;
+  padding-top: 3px;
+}
+
 .work__info,
-.education__info {
+.education__info,
+.services__info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -128,7 +199,8 @@
 }
 
 .work__company,
-.education__school {
+.education__school,
+.services__name {
   font-weight: var(--font-weight-semibold);
   font-size: 28px;
   color: var(--color-white);
@@ -136,7 +208,14 @@
 }
 
 .work__duration,
-.education__duration {
+.education__duration{
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.services__description {
   font-weight: var(--font-weight-regular);
   font-size: 16px;
   color: var(--color-white);
@@ -146,13 +225,55 @@
 
 @media (min-width: 768px) {
   .image__mask {
-    width: 450px;
-    height: 450px;
+    max-width: 450px;
+  }
+
+  .work__details,
+  .education__details {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .work__logo,
+  .education__logo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .lottie__container {
+    max-width: 75px;
+    min-width: 75px;
+    height: 75px;
+  }
+
+  .bookbuild__logo,
+  .appex__logo,
+  .larssenamaral__logo,
+  .usn__logo {
+    width: 40px;
+  }
+
+  .noroff__logo {
+    height: 40px;
   }
 }
 
 /*========== Desktop ==========*/
 
 @media (min-width: 1200px) {
+  .about__container {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .about__section {
+    flex: 1;
+    align-items: flex-start;
+    text-align: left;
+  }
 
+  .details__section {
+    flex: 1.25;
+  }
 }
