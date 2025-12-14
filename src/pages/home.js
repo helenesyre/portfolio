@@ -12,6 +12,10 @@ export function home() {
   `;
 }
 
+/**
+ * Source from 15.december:
+ * https://www.npmjs.com/package/@splinetool/runtime
+ */
 export function initHeroSpline() {
   const splineSceneUrl = 'https://prod.spline.design/h0WdaIUKmoHSzeMK/scene.splinecode';
   function initializeCanvas() {
