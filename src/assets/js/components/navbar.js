@@ -1,4 +1,5 @@
 export function navbar() {
+  // No need for currentPath, logic handled in initNavbar
   return `
     <div class="navbar-logo">
       <a href="#/">
@@ -83,6 +84,33 @@ function initNavbar() {
   const navMenu = document.getElementById("nav-menu");
   const navToggle = document.getElementById("nav-toggle");
   const navClose = document.getElementById("nav-close");
+  const navLinks = document.querySelectorAll(".navbar-links-mobile a");
+  const navLinksDesktop = document.querySelectorAll(".navbar-links a");
+
+  function setActiveNavLink() {
+    const hash = window.location.hash || "#/";
+    // Desktop links
+    navLinksDesktop.forEach(link => {
+      if (link.getAttribute("href") === hash) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+    // Mobile links
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === hash) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }
+
+  setActiveNavLink();
+  window.addEventListener("hashchange", setActiveNavLink);
+
+  // Show menu
   if (navToggle) {
     navToggle.addEventListener("click", () => {
       navMenu.classList.add("show-menu");
@@ -98,14 +126,25 @@ function initNavbar() {
     });
   }
 
+  // Hide menu when clicking outside
   if (navOverlay) {
     navOverlay.addEventListener("click", () => {
       navMenu.classList.remove("show-menu");
       navOverlay.classList.remove("show-overlay");
     });
   }
+
+  // Close menu when clicking on nav links
+  if (navLinks) {
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("show-menu");
+        navOverlay.classList.remove("show-overlay");
+      });
+    });
+  }
 }
 
 window.addEventListener('load', () => {
   initNavbar();
-})
+});
