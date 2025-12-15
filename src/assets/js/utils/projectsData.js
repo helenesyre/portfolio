@@ -6,10 +6,8 @@ export const projectsData = [
     image: "/src/assets/images/rainydays.jpg",
     tags: ["HTML", "CSS"],
     alt: "Rainy Days Project Image",
-    links: [
-      { label: "GitHub repo", url: "#" },
-      { label: "Live demo", url: "#" }
-    ]
+    githubRepo: "https://github.com/helenesyre/html-css-helene-syre",
+    liveDemo: "https://helenesyre.github.io/html-css-helene-syre/",
   },
   {
     title: "Semester Project 1",
@@ -18,10 +16,8 @@ export const projectsData = [
     image: "/src/assets/images/community-science-museum.jpg",
     tags: ["HTML", "CSS"],
     alt: "Community Science Museum Project Image",
-    links: [
-      { label: "GitHub repo", url: "#" },
-      { label: "Live demo", url: "#" }
-    ]
+    githubRepo: "https://github.com/helenesyre/SP1-helene-syre",
+    liveDemo: "https://helenesyre.github.io/SP1-helene-syre/",
   },
   {
     title: "JavaScript 1",
@@ -30,9 +26,7 @@ export const projectsData = [
     image: "/src/assets/images/gamehub.jpg",
     tags: ["HTML", "CSS", "JS"],
     alt: "Gamehub Project Image",
-    links: [
-      { label: "GitHub repo", url: "#" },
-      { label: "Live demo", url: "#" }
-    ]
+    githubRepo: "https://github.com/helenesyre/JS1-helene-syre",
+    liveDemo: "https://helenesyre.github.io/JS1-helene-syre/",
   }
 ];

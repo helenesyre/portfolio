@@ -20,8 +20,8 @@ export function projects() {
           <p class="project__description">${project.description}</p>
         </div>
         <div class="project__actions">
-          <a href="${project.github}" class="project__link button__primary">GitHub repo</a>
-          <a href="${project.demo}" class="project__link button__primary">Live demo</a>
+          <a href="${project.githubRepo}" class="project__link button__primary" target="_blank" rel="noopener">GitHub repo</a>
+          <a href="${project.liveDemo}" class="project__link button__primary" target="_blank" rel="noopener">Live demo</a>
         </div>
       </div>
     </div>
