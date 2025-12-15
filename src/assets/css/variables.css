@@ -45,7 +45,7 @@
   --font-size-h6: 14px;
 
   --font-size-paragraph: 16px;
-  --font-size-badge: 24px;
+  --font-size-tags: 16px;
   --font-size-button: 16px;
   --input-font-size: 16px;
 
@@ -80,7 +80,6 @@
   --gradient-blue: linear-gradient(315deg, var(--color-dark-blue), var(--color-light-blue));
   --gradient-blue-background: linear-gradient(319deg, var(--color-light-blue), rgb(96 176 255 / 20%), rgb(96 176 255 / 20%), var(--color-light-blue)), var(--color-black);
   --gradient-yellow-background: linear-gradient(319deg, var(--color-yellow), rgb(255 202 115 / 20%), rgb(255 202 115 / 20%), var(--color-yellow)), var(--color-black);
-
 }
 
 /*========== Tablet ==========*/

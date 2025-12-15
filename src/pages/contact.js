@@ -1,10 +1,11 @@
-export function contact() {
+export function contact(headingLevel = "h1") {
+  const headingTag = headingLevel === "h2" ? "h2" : "h1";
   return `
     <section class="contact">
       <div class="contact__intro">
         <div>
           <p class="eyebrow">Contact Now</p>
-          <h1 class="contact__title">Let’s Talk</h1>
+          <${headingTag} class="contact__title">Let’s Talk</${headingTag}>
           <p class="contact__description"> Have some big idea or brand to develop and need help? Then reach out — we'd love to hear about your project and provide help.</p>
         </div>
 

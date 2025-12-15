@@ -1,9 +1,16 @@
 import { projectsData } from "../assets/js/utils/projectsData.js";
 
+function getTagsHtml(tags) {
+  return tags.map(tag => `<span class="project__tag tag__${tag.toLowerCase().replace(/\s+/g, '-')}">${tag}</span>`).join("");
+}
+
 export function projects() {
-	const projectCards = projectsData.map(project => `
+  const projectCards = projectsData.map(project => `
     <div class="project__item">
       <div class="project__image-container">
+        <div class="project__tags">
+          ${getTagsHtml(project.tags)}
+        </div>
         <img src="${project.image}" class="project__image" alt="${project.title} Project Image" />
       </div>
       <div class="project__content">
@@ -20,7 +27,7 @@ export function projects() {
     </div>
   `).join("");
 
-	return `
+  return `
     <h1 class="project__page-title">Projects</h1>
     <div class="project__grid">
       ${projectCards}
