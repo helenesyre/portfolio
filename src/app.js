@@ -2,7 +2,7 @@
  * Source from 11.desember:
  * https://dev.to/moseeh_52/building-modern-spas-with-vanilla-javascript-a-beginners-guide-9a3
  */
-import { home, initHeroSpline } from './pages/Home.js'
+import { home, initHeroSpline } from './pages/home.js'
 import { projects } from './pages/projects.js'
 import { about } from './pages/about.js'
 import { contact } from './pages/contact.js'
