@@ -46,7 +46,7 @@ export function about() {
   return `
     <section class="about__container">
       <section class="about__section">
-        <img class="image__mask" alt="Portrait Image" src="/portrait.jpg" />
+        <img class="image__mask" alt="Portrait Image" src="${import.meta.env.BASE_URL}portrait.jpg" />
         <h1>Hi! I'm Helene Syre</h1>
         <p>I'm currently a student, but have worked as a graphic designer.</p>
       </section>
