@@ -11,7 +11,7 @@ export function projects() {
         <div class="project__tags">
           ${getTagsHtml(project.tags)}
         </div>
-        <img src="${project.image}" class="project__image" alt="${project.title} Project Image" />
+        <img src="${project.image}" class="project__image" alt="${project.alt} Project Image" />
       </div>
       <div class="project__content">
         <div class="project__info">

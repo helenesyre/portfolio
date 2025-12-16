@@ -175,14 +175,14 @@
   background-size: 20px;
 }
 
-select:invalid,
+/*select:invalid,
 select option[value=""] {
   color: var(--color-light-gray);
 }
 
 select:not(:invalid) {
   color: var(--color-white);
-}
+}*/
 
 .contact__form textarea {
   height: 120px;

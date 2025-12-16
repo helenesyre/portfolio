@@ -12,26 +12,26 @@ export function contact(headingLevel = "h1") {
         <ul class="contact__methods">
           <li class="contact__method">
             <a href="mailto:syrehelene@gmail.com">
-              <i class="fa-regular fa-envelope contact__icon" aria-label="Email"></i>
-              <p class="contact__text">syrehelene@gmail.com</p>
+              <i class="fa-regular fa-envelope contact__icon" aria-hidden="true"></i>
+              <p class="contact__text"><span class="sr-only">Email address</span>syrehelene@gmail.com</p>
             </a>
           </li>
           <li class="contact__method">
             <a href="https://www.instagram.com/syre_design" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-instagram contact__icon" aria-label="Instagram"></i>
-              <p class="contact__text">syre_design</p>
+              <i class="fa-brands fa-instagram contact__icon" aria-hidden="true"></i>
+              <p class="contact__text"><span class="sr-only">Instagram username</span>syre_design</p>
             </a>
           </li>
           <li class="contact__method">
             <a href="https://www.linkedin.com/in/helene-syre" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-linkedin-in contact__icon" aria-label="LinkedIn"></i>
-              <p class="contact__text">helene-syre</p>
+              <i class="fa-brands fa-linkedin-in contact__icon" aria-hidden="true"></i>
+              <p class="contact__text"><span class="sr-only">LinkedIn username</span>helene-syre</p>
             </a>
           </li>
           <li class="contact__method">
             <a href="https://github.com/helenesyre" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-github contact__icon" aria-label="Github"></i>
-              <p class="contact__text">helenesyre</p>
+              <i class="fa-brands fa-github contact__icon" aria-hidden="true"></i>
+              <p class="contact__text"><span class="sr-only">Github username</span>helenesyre</p>
             </a>
           </li>
         </ul>
@@ -39,6 +39,7 @@ export function contact(headingLevel = "h1") {
         <div class="contact__files">
           <div class="contact__file">
             <a href="/src/assets/images/gamehub.jpg" download class="contact__file-link">
+              <span class="sr-only">Download CV</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
                 <path d="M25.75,22.5c-.78,1.37-1.91,2.5-3.27,3.29-1.36.79-2.91,1.21-4.48,1.21s-3.12-.42-4.48-1.21c-1.36-.79-2.49-1.93-3.27-3.29h-5.75c-.6,0-1.17.24-1.59.66-.42.42-.66.99-.66,1.59v6.75c0,.6.24,1.17.66,1.59.42.42.99.66,1.59.66h27c.6,0,1.17-.24,1.59-.66.42-.42.66-.99.66-1.59v-6.75c0-.6-.24-1.17-.66-1.59-.42-.42-.99-.66-1.59-.66h-5.75Z" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px;"/>
                 <path d="M18,18V2.25" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px;"/>
@@ -53,6 +54,7 @@ export function contact(headingLevel = "h1") {
 
           <div class="contact__file">
             <a href="#" download class="contact__file-link">
+              <span class="sr-only">Download Cover Letter</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
                 <path d="M25.75,22.5c-.78,1.37-1.91,2.5-3.27,3.29-1.36.79-2.91,1.21-4.48,1.21s-3.12-.42-4.48-1.21c-1.36-.79-2.49-1.93-3.27-3.29h-5.75c-.6,0-1.17.24-1.59.66-.42.42-.66.99-.66,1.59v6.75c0,.6.24,1.17.66,1.59.42.42.99.66,1.59.66h27c.6,0,1.17-.24,1.59-.66.42-.42.66-.99.66-1.59v-6.75c0-.6-.24-1.17-.66-1.59-.42-.42-.99-.66-1.59-.66h-5.75Z" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px;"/>
                 <path d="M18,18V2.25" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px;"/>
@@ -83,9 +85,8 @@ export function contact(headingLevel = "h1") {
           <div class="form__group">
             <label for="service">What service are you interested in</label>
             <select id="service" name="service" required>
-              <option value="" disabled selected>Select a service...</option>
               <optgroup label="Front-end">
-                <option value="Website">Website</option>
+                <option value="Website" selected>Website</option>
                 <option value="WebApp">Web App</option>
                 <option value="LandingPage">Landing Page</option>
                 <option value="Other-Frontend">Other (Front-end)</option>

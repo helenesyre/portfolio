@@ -58,7 +58,7 @@
   font-family: var(--font-primary);
 }
 .tag__html {
-  background: var(--color-red);
+  background: var(--color-dark-red);
   color: var(--color-white);
 }
 
