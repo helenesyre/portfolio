@@ -15,7 +15,7 @@ export function home() {
         <div class="project__tags">
           ${project.tags.map(tag => `<span class="project__tag tag__${tag.toLowerCase().replace(/\s+/g, '-')}">${tag}</span>`).join("")}
         </div>
-        <img src="${project.image}" class="project__image" alt="${project.title} Project Image" />
+        <img src="${project.image}" class="project__image" alt="${project.alt} Project Image" />
       </div>
       <div class="project__content">
         <div class="project__info">

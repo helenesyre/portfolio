@@ -59,16 +59,19 @@ export function navbar() {
       <ul class="navbar-icons-mobile">
         <li>
           <a href="https://www.instagram.com/syre_design" target="_blank" rel="noopener noreferrer">
+            <span class="sr-only">Instagram</span>
             <i class="fa-brands fa-instagram" aria-label="Instagram"></i>
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/helene-syre" target="_blank" rel="noopener noreferrer">
+            <span class="sr-only">LinkedIn</span>
             <i class="fa-brands fa-linkedin-in" aria-label="LinkedIn"></i>
           </a>
         </li>
         <li>
           <a href="https://github.com/helenesyre" target="_blank" rel="noopener noreferrer">
+            <span class="sr-only">Github</span>
             <i class="fa-brands fa-github" aria-label="Github"></i>
           </a>
         </li>

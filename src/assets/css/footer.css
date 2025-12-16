@@ -16,6 +16,10 @@ footer {
   align-items: center;
 }
 
+.footer-logo span {
+  color: var(--color-black);
+}
+
 .footer-logo svg{
   color: var(--color-black);
   width: 80px;
