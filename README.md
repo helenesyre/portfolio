@@ -4,7 +4,9 @@
 
 This is my personal portfolio website to showcase my projects, skills and experiences as a front-end developer.
 
-## Description
+---
+
+## 📝 Description
 
 This project is a Single Page Application (SPA) portfolio website created to showcase my work, skills, and background as a front-end developer. But also focuses on my background in visual communication and graphic design. The portfolio highlights selected projects (more will be added later) and demonstrates my approach to building responsive, user-focused, and visually consistent web experiences.
 
@@ -13,7 +15,7 @@ This project is a Single Page Application (SPA) portfolio website created to sho
 - **About** – Overview of my educations and work experiences.
 - **Contact** – A contact form allowing visitors to get in touch. It also has social media and email linked.
 
-## Built With
+## 🛠️ Built With
 
 Main tools and technologies used in this project:
 
@@ -27,9 +29,7 @@ Main tools and technologies used in this project:
 
 ---
 
-## Getting Started
-
-### Installing
+## 📦 Installation
 
 Follow these steps to get a copy of the project running locally:
 
@@ -54,7 +54,7 @@ Follow these steps to get a copy of the project running locally:
    npm run dev
    ```
 
-## Available Scripts
+## 💻 Available Scripts
 
 In the project directory, you can run:
 
@@ -62,9 +62,13 @@ In the project directory, you can run:
 - `npm run build` – Builds the app for production.
 - `npm run preview` – Previews the production build locally.
 
+## 📜 License
+
+MIT License
+
 ---
 
-## Contact
+## 👋 Contact
 
 Helene Syre - [@syre_design](https://www.instagram.com/syre_design/) - syrehelene@gmail.com - [Linkedin](https://www.linkedin.com/in/helene-syre/)
 
