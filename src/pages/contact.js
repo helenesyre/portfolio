@@ -38,7 +38,7 @@ export function contact(headingLevel = "h1") {
 
         <div class="contact__files">
           <div class="contact__file">
-            <a href="/src/assets/images/gamehub.jpg" download class="contact__file-link">
+            <a href="documents/Helene_Syre-CV.pdf" download class="contact__file-link">
               <span class="sr-only">Download CV</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
                 <path d="M25.75,22.5c-.78,1.37-1.91,2.5-3.27,3.29-1.36.79-2.91,1.21-4.48,1.21s-3.12-.42-4.48-1.21c-1.36-.79-2.49-1.93-3.27-3.29h-5.75c-.6,0-1.17.24-1.59.66-.42.42-.66.99-.66,1.59v6.75c0,.6.24,1.17.66,1.59.42.42.99.66,1.59.66h27c.6,0,1.17-.24,1.59-.66.42-.42.66-.99.66-1.59v-6.75c0-.6-.24-1.17-.66-1.59-.42-.42-.99-.66-1.59-.66h-5.75Z" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px;"/>
@@ -53,7 +53,7 @@ export function contact(headingLevel = "h1") {
           </div>
 
           <div class="contact__file">
-            <a href="#" download class="contact__file-link">
+            <a href="documents/Helene_Syre-Cover_Letter.pdf" download class="contact__file-link">
               <span class="sr-only">Download Cover Letter</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
                 <path d="M25.75,22.5c-.78,1.37-1.91,2.5-3.27,3.29-1.36.79-2.91,1.21-4.48,1.21s-3.12-.42-4.48-1.21c-1.36-.79-2.49-1.93-3.27-3.29h-5.75c-.6,0-1.17.24-1.59.66-.42.42-.66.99-.66,1.59v6.75c0,.6.24,1.17.66,1.59.42.42.99.66,1.59.66h27c.6,0,1.17-.24,1.59-.66.42-.42.66-.99.66-1.59v-6.75c0-.6-.24-1.17-.66-1.59-.42-.42-.99-.66-1.59-.66h-5.75Z" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px;"/>
