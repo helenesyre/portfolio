@@ -15,7 +15,6 @@
   --color-black: #0C0C0C;
   --color-dark-gray: #1D1D1D;
   --color-medium-gray: #272727;
-  --color-light-gray: #757575;
 
   /*========== Color Percentages ==========*/
   --color-white-30: rgb(240 240 240 / 0.3);
@@ -45,7 +44,6 @@
   --font-size-h5: 16px;
   --font-size-h6: 14px;
 
-  --font-size-paragraph: 16px;
   --font-size-tags: 16px;
   --font-size-button: 16px;
   --input-font-size: 16px;
