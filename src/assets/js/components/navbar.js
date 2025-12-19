@@ -1,3 +1,7 @@
+/**
+ * Generates the HTML for the navigation bar.
+ * @returns {string} - HTML string for the navbar.
+ */
 export function navbar() {
   // No need for currentPath, logic handled in initNavbar
   return `
@@ -86,6 +90,10 @@ export function navbar() {
   `;
 }
 
+/**
+ * Initializes the navbar functionality including active link highlighting and menu toggling.
+ * @returns {void}
+ */
 function initNavbar() {
   const navOverlay = document.getElementById("nav-overlay");
   const navMenu = document.getElementById("nav-menu");
@@ -94,6 +102,7 @@ function initNavbar() {
   const navLinks = document.querySelectorAll(".navbar-links-mobile a");
   const navLinksDesktop = document.querySelectorAll(".navbar-links a");
 
+  // Set active nav link based on current hash
   function setActiveNavLink() {
     const hash = window.location.hash || "#/";
     // Desktop links
@@ -152,6 +161,7 @@ function initNavbar() {
   }
 }
 
+// Initialize navbar on page load
 window.addEventListener('load', () => {
   initNavbar();
 });

@@ -1,9 +1,18 @@
 import { projectsData } from "../assets/js/utils/projectsData.js";
 
+/**
+ * Generates HTML for project tags.
+ * @param {Array} tags - Array of tag strings.
+ * @returns {string} - HTML string for the tags.
+ */
 function getTagsHtml(tags) {
   return tags.map(tag => `<span class="project__tag tag__${tag.toLowerCase().replace(/\s+/g, '-')}">${tag}</span>`).join("");
 }
 
+/**
+ * Renders the Projects page with project cards.
+ * @returns {string} - HTML string for the Projects page.
+ */
 export function projects() {
   const projectCards = projectsData.map(project => `
     <div class="project__item">

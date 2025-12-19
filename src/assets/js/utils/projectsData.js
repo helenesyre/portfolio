@@ -1,3 +1,8 @@
+/**
+ * Data for projects.
+ * Each object contains details about a project including title, subtitle, description, image, tags, alt text, GitHub repository link, and live demo link.
+ * @type {Array.<{title: string, subtitle: string, description: string, image: string, tags: Array.<string>, alt: string, githubRepo: string, liveDemo: string}>}
+ */
 export const projectsData = [
   {
     title: "Cross Course Project",

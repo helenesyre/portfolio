@@ -22,9 +22,13 @@
 }
 
 /**
- * Source from 13.desember:
- * https://www.w3schools.com/css/css3_masking.asp
- */
+ * Source from:
+ * CSS Masking
+ * @publisher: W3Schools
+ * @date: N/A
+ * accessed: 2025-12-13
+ * link: https://www.w3schools.com/css/css3_masking.asp
+*/
 .image__mask {
   width: 100%;
   max-width: 300px;

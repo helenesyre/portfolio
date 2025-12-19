@@ -1,6 +1,15 @@
 /**
- * Source from 14.december:
- * https://lottiefiles.com/blog/working-with-lottie-animations/how-to-add-lottie-animation-in-web-page-html
+* Source from:
+* How to Add Lottie Animations to a Website with HTML
+* @publisher: LottieFiles
+* @date: 2022-08-11
+* accessed: 2025-12-14
+* link: https://lottiefiles.com/blog/working-with-lottie-animations/how-to-add-lottie-animation-in-web-page-html
+*/
+
+/**
+ * Array of animation data objects for Lottie animations used in the portfolio.
+ * @type {Array<{id: string, html: string}>}
  */
 export const animationsData = [
   {

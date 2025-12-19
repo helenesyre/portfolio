@@ -1,7 +1,11 @@
 /**
- * Source from 11.desember:
- * https://dev.to/moseeh_52/building-modern-spas-with-vanilla-javascript-a-beginners-guide-9a3
- */
+ * Source from:
+ * Building Modern SPAs with Vanilla JavaScript: A Beginner's Guide
+ * @publisher: moseeh
+ * @date: 18 February
+ * accessed: 2025-12-11
+ * link: https://dev.to/moseeh_52/building-modern-spas-with-vanilla-javascript-a-beginners-guide-9a3
+*/
 import { home, initHeroSpline } from './pages/home.js'
 import { projects } from './pages/projects.js'
 import { about } from './pages/about.js'
@@ -16,6 +20,11 @@ const routes = {
   '#/contact': contact
 };
 
+/**
+ * Handles client-side routing for the SPA.
+ * Updates the #app element with the content of the current route
+ * or displays a 404 message if the route is not found.
+ */
 function handleRoute() {
   const hash = window.location.hash || '#/'; // Default to home if no hash
   const content = routes[hash] ? routes[hash]() : '<h1>Page Not Found</h1>';

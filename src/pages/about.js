@@ -2,6 +2,10 @@ import { workExperiencesData } from "../assets/js/utils/workExperiencesData.js";
 import { educationsData } from "../assets/js/utils/educationsData.js";
 import { animationsData } from "../assets/js/utils/animationsData.js";
 
+/**
+ * Renders the About page with work experience, education, and services.
+ * @returns {string} - HTML string for the About page.
+ */
 export function about() {
   const workExperienceCard = workExperiencesData.map(experience => `
     <li class="work__item">

@@ -1,3 +1,8 @@
+/**
+ * Renders the Contact page with contact information and a form.
+ * @param {string} headingLevel - The HTML heading level to use for the title (default is "h1").
+ * @returns {string} - HTML string for the Contact page.
+ */
 export function contact(headingLevel = "h1") {
   const headingTag = headingLevel === "h2" ? "h2" : "h1";
   return `

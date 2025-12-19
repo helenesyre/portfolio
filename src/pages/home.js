@@ -3,6 +3,10 @@ import { animationsData } from "../assets/js/utils/animationsData.js";
 import { projectsData } from "../assets/js/utils/projectsData.js";
 import { contact } from '../pages/contact.js';
 
+/**
+ * Renders the Home page with hero section, skills & services, projects, and contact section.
+ * @returns {string} - HTML string for the Home page.
+ */
 export function home() {
   const graphicDesignAnimation = animationsData.find(anim => anim.id === 'graphicDesign');
   const motionGraphicsAnimation = animationsData.find(anim => anim.id === 'motionGraphics');
@@ -102,8 +106,17 @@ export function home() {
 }
 
 /**
- * Source from 15.december:
- * https://www.npmjs.com/package/@splinetool/runtime
+* Source from:
+* Spline Runtime
+* @publisher: alelepd, guillaumespline and marcospline
+* @last-update: 2025-12-19
+* accessed: 2025-12-15
+* link: https://www.npmjs.com/package/@splinetool/runtime
+*/
+
+/**
+ * Initializes and manages the Spline 3D scene in the hero section.
+ * @returns {void}
  */
 export function initHeroSpline() {
   const splineSceneUrl = 'https://prod.spline.design/h0WdaIUKmoHSzeMK/scene.splinecode';
@@ -150,7 +163,10 @@ export function initHeroSpline() {
   spline.load(splineSceneUrl);
 }
 
-// Scroll to #projects with offset
+/**
+ * Smoothly scrolls to the Projects section with an offset.
+ * @returns {void}
+ */
 export function scrollToProjects() {
   const element = document.getElementById('projects');
   if (element) {

@@ -1,3 +1,7 @@
+/**
+ * Returns the HTML string for the website footer, including logo and social icons.
+ * @returns {string} HTML markup for the footer section.
+ */
 export function footer() {
   return `
     <div class="container footer-content">
