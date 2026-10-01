@@ -166,6 +166,15 @@
   fill: var(--color-white);
 }
 
+.vinci__logo {
+  width: 48px;
+  height: auto;
+}
+
+.vinci__logo path {
+  fill: var(--color-white);
+}
+
 .appex__logo {
   padding-right: 3px;
   padding-top: 3px;
@@ -253,6 +262,10 @@
 
   .noroff__logo {
     height: 40px;
+  }
+
+  .vinci__logo {
+    width: 58px;
   }
 }
 
