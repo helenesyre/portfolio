@@ -14,7 +14,8 @@ function getTagsHtml(tags) {
  * @returns {string} - HTML string for the Projects page.
  */
 export function projects() {
-  const projectCards = projectsData.map(project => `
+  const reversedProjectsData = [...projectsData].reverse(); // Create a reversed copy of the projectsData array
+  const projectCards = reversedProjectsData.map(project => `
     <div class="project__item">
       <div class="project__image-container">
         <div class="project__tags">

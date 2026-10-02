@@ -37,7 +37,10 @@
   height: 280px;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project__tags {
@@ -67,9 +70,24 @@
   color: var(--color-black);
 }
 
-.tag__js{
+.tag__js {
   background: var(--color-light-blue);
   color: var(--color-black);
+}
+
+.tag__tailwind {
+  background: #299078;
+  color: var(--color-white);
+}
+
+.tag__react {
+  background: #a161fb;
+  color: var(--color-white);
+}
+
+.tag__typescript {
+  background: #2377dd;
+  color: var(--color-white);
 }
 
 .project__info {

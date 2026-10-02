@@ -13,7 +13,12 @@ export function home() {
   const brandIdentityAnimation = animationsData.find(anim => anim.id === 'brandIdentity');
   const uiUxAnimation = animationsData.find(anim => anim.id === 'uiUx');
   const webDevelopmentAnimation = animationsData.find(anim => anim.id === 'webDevelopment');
-  const projectCards = projectsData.map(project => `
+  const visibleProjectsIds = [8, 7, 6, 5];
+  const visibleProjectsData = visibleProjectsIds
+    .map(id => projectsData.find(project => project.id === id))
+    .filter(Boolean);
+
+  const projectCards = visibleProjectsData.map(project => `
     <div class="project__item">
       <div class="project__image-container">
         <div class="project__tags">
